@@ -2,46 +2,63 @@ body
 {
   margin: 0;
   padding: 0;
-  background: #f3f3f3;
+  font-family: sans-serif;
+  background: #262626;
 }
 .center
 {
+    width: 40%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -050%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #333;
+    box-sizing: border-box;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
-input[type="checkbox"]
+h1
 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.skillbar
+{
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 100%;
+    margin: 20px 0;
+}
+.skillbar p
+{
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.skillbar p:nth-child(2)
+{
+    float: right;
     position: relative;
-    width: 80px;
-    height: 40px;
-    -webkit-appearance: none;
-    background: #c6c6c6;
-    outline: none;
-    border-radius: 20px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: 0.5%;
+    top: -30px;
 }
-input:checked[type="checkbox"]
+.skill_percentage
 {
-    background: #00a2ff;
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
-input[type="checkbox"]:before
+.skill_level
 {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    top: 0;
-    left: 0;
-    background: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-}
-input:checked[type="checkbox"]::before
-{
-    left:40px;
+    background: #0084ff;
+    width: 85%;
+    height: 10px;
+    border-radius: 6px;
 }
